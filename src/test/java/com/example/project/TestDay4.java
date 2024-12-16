@@ -36,7 +36,7 @@ public class TestDay4 {
             new Day4.Reindeer("Prancer", 110, 6, 1)
         };
 
-        String winner = Day4.simulateRace(10, reindeers);
+        String winner = Day4.Reindeer.simulateRace(10, reindeers);
         assertNotNull(winner, "Race should have a winner after simulation.");
         assertEquals("Prancer",winner,"Winner should be Prancer");
     }
@@ -49,7 +49,7 @@ public class TestDay4 {
             new Day4.Reindeer("Prancer", 70, 6, 1)
         };
 
-        String winner = Day4.simulateRace(100, reindeers);
+        String winner = Day4.Reindeer.simulateRace(100, reindeers);
         assertNotNull(winner, "Race should have a winner after simulation.");
         assertEquals("Dasher",winner,"Winner should be Dasher");
     }
